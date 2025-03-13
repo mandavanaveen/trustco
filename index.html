@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Title</title>
+    <title>Landing HomePage</title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <h1>Logo</h1>
         <nav>
-            <ul>
+            <ul class="list-item">
                 <li><a href="#">Features</a></li>
                 <li><a href="#">Solutions</a></li>
                 <li><a href="#">Company</a></li>
@@ -19,17 +20,50 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+
+        <div class="auth-buttons">
+            <button>Login</button>
+            <button>Sign up</button>
+        </div>
     </header>
 
     <!-- Main Content Section -->
-    <main>
-        <h2>Welcome to Our Landing Page</h2>
-        <p>This is a placeholder for the main content.</p>
+    <main class="">
+        <!-- Hero Section -->
+        <div class="hero-cont">
+            <div class="hero-child-cont">
+                <img class="hero5" src="./Assets/Hero 5.png" alt="Hero 5"/>
+                <div class="herotextcont">
+                    <div>
+                        <h1 class="heroh1">Find a High-Potential <br />
+                            Customers with <span>Trustco.</span></h1>
+                        <p class="heropara">We provide sales teams and professionals with the knowledge, skill and <br />
+                            discipline they need to be 10x more successful.</p>
+                    </div>
+
+                    <div class="getstarteddiv">
+                        <button class="getstartedbtn">Get Started</button>
+                        <div class="checkoutvideo">
+                            <img class="playimg" src="./Assets/Play.png" alt=""/>
+                            <p>Check Our Video</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="./Assets/Hero 6.png" alt="Hero 6"/>
+            </div>
+        </div>
+        
     </main>
 
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 Your Company Name. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".list-item").classList.toggle("active");
+        }
+    </script>
 </body>
 </html>

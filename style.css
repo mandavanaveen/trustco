@@ -9,12 +9,11 @@
 
 /* Base Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--background-color);
-    padding: 16px;
+    background-color: #F2F5F6;
 }
 
 /* CSS Variables for Color Palette */
@@ -45,21 +44,28 @@ p {
 }
 
 /* Link Styles */
-a {
-    color: var(--primary-color);
-    text-decoration: none;
+nav ul li {
+    color: #12141D;
+    display: inline;
+    margin: 0 10px;
 }
 
-a:hover {
-    text-decoration: underline;
+nav ul li a {
+    text-decoration: none;
+    color: #12141D;
+
 }
 
 /* Header Styling */
 header {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 16px;
+    background-color: #F2F5F6;
+    height: 98px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Footer Styling */
@@ -69,4 +75,112 @@ footer {
     text-align: center;
     padding: 16px;
     margin-top: 16px;
+}
+
+.logo {
+    width: 159px;
+    height: 24px;
+}
+
+/* Hero Section */
+
+.hero-cont{
+    width: full;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-child-cont{
+    width: 1200px;
+    height: 340px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+}
+
+.heroh1{
+    width: 719px;
+    height: 116px;
+    color: #12141D;
+    font-weight: 800;
+    font-size: 64px;
+    text-align: center;
+    line-height: 65px; 
+    letter-spacing: -2px;
+}
+
+.heroh1 span{
+    color: #043A53;
+}
+
+.heropara{
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 16px;
+    line-height: 1.5; 
+    letter-spacing: 0px;
+    text-align: center;
+    color: #12141D;
+    opacity: 0.7;
+}
+
+.hero5{
+    width: 197px;
+    clip-path: inset(0 3px 0 0); 
+}
+
+.herotextcont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.getstarteddiv{
+    width: 408.18px;
+    height: 67.18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.getstartedbtn{
+    font-family: 'Lato';
+    width: 141px;
+    height: 60px;
+    color: white;
+    background-color: #043A53;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    border-radius: 55px;
+    border: none;
+}
+
+.checkoutvideo{
+    width: 236.18px;
+    height: 67.18px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    
+}
+
+.checkoutvideo p{
+    margin-top: 16px;
+    width: 127px;
+    height: 28px;
+}
+
+.playimg{
+    width: 35.18px;
+    height: 35.18px;
 }

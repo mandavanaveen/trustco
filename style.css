@@ -188,6 +188,56 @@ footer {
     height: 35.18px;
 }
 
+.brands{
+    height: 132px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+.brands p{
+    margin-top: 10px;
+    width: 266px;
+    height: 32px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.brandimages{
+    display: flex;
+    gap: 64px;
+    width: 809.61px;
+    height: 32px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.google{
+    width: 97px;
+    height: 32px;
+}
+
+.atlassian{
+    width: 135px;
+    height: 17px;
+}
+
+.canon{
+    width: 95px;
+    height: 20px;
+}
+
+.walmart{
+    width: 129px;
+    height: 30px;
+}
+
+.amazon{
+    width: 95px;
+    height: 29px;
+}
 
 @media screen and (max-width: 768px) {
     .hero-cont{

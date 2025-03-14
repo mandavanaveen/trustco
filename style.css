@@ -280,13 +280,13 @@ footer {
         padding-left: 20px;
         grid-row: 2;
         grid-column: 1;
-        width: 162px;
+        width: 174px;
         height: 279px;
         justify-self: end;
         /* clip-path: inset(0 15px 0 0); */
     }
 
-    .hero-child-cont > img[alt="Hero 6"] {
+    .hero-child-cont .hero6 {
         padding-right: 10px;
         grid-row: 2;
         grid-column: 2;
@@ -307,5 +307,43 @@ footer {
 
     .checkoutvideo {
         justify-content: center;
+    }
+
+    .brands{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .brands p{
+        margin-top: 10px;
+        width: 322px;
+        height: 18px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .brandimages{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        width: 400px;
+        max-width: 500px;
+        height: 32px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .google, .atlassian, .canon {
+        order: 1; /* First row */
+    }
+    
+    .walmart, .amazon {
+        order: 2; /* Second row */
     }
 }

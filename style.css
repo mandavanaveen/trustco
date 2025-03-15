@@ -288,6 +288,17 @@ footer {
     opacity: 1;
 }
 
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-auth {
+    display: none;
+    /* background-color: red; */
+}
+
 @media screen and (max-width: 768px) {
     .hero-cont {
         padding: 0.9375rem; /* 15px */
@@ -394,5 +405,56 @@ footer {
     .walmart, .amazon {
         order: 2;
     }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .list-item {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        justify-content: end;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background-color: #F2F5F6;
+        text-align: center;
+        padding: 20px 0;
+        z-index: 1001;
+    }
+
+    .list-item.active {
+        display: flex;
+    }
+
+    .list-item li {
+        padding: 10px 0;
+    }
+
+    .auth-buttons {
+        width: screen;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .auth-buttons button {
+        width: 150px;
+        height: 45px;
+        font-size: 16px;
+        border-radius: 25px;
+    }
+
+    .desktop-auth {
+        display: none;
+    }
     
+    .hamburger{
+        width:  24px;
+        height: 24px;
+    }
 }

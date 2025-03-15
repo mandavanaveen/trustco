@@ -239,111 +239,160 @@ footer {
     height: 29px;
 }
 
-@media screen and (max-width: 768px) {
-    .hero-cont{
-        padding: 15px;
+/* Header */
 
+.list-item{
+    width: 487px;
+    height: 19px;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.list-items li a {
+    font-size: 50px;
+    font-weight: 800;
+    text-decoration: none;
+    
+}
+
+.list-items li a:visited {
+    color: #043A53;
+    
+}
+
+.auth-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 194px;
+    height: 50px;
+    justify-content: space-between;
+    
+}
+
+.auth-buttons button{
+    width: 92px;
+    height: 50px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 100%;
+    color: #12141D;
+    opacity: 0.8;
+    border-radius: 42px;
+    border: none;
+    background-color: white;
+}
+
+.auth-buttons button.active{
+    background-color: #043A53;
+    color: white;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-cont {
+        padding: 0.9375rem; /* 15px */
     }
+    
     .hero-child-cont {
         width: 100%;
         height: auto;
         display: grid;
         grid-template-rows: auto auto;
         grid-template-columns: 1fr 1fr;
-        gap: 40px;
+        gap: 2.5rem; /* 40px */
     }
-
+    
     .herotextcont {
         grid-row: 1;
         grid-column: 1 / -1;
         order: 1;
     }
-
+    
     .heroh1 {
         width: 100%;
         height: auto;
-        font-size: 36px;
+        font-size: 2.25rem; /* 36px */
         line-height: 1.2;
-        letter-spacing: -1px;
-        height: auto;
+        letter-spacing: -0.0625rem; /* -1px */
     }
-
+    
     .heropara {
-        font-size: 16px;
-        margin-top: 12px;
+        font-size: 1rem; /* 16px */
+        margin-top: 0.75rem; /* 12px */
         line-height: 1.5;
-        max-width: 330px;
-        padding: 0 10px;
+        max-width: 20.625rem; /* 330px */
+        padding: 0 0.625rem; /* 10px */
     }
-
+    
     .hero5 {
-        padding-left: 20px;
+        padding-left: 1.25rem; /* 20px */
         grid-row: 2;
         grid-column: 1;
-        width: 174px;
-        height: 279px;
+        width: 10.875rem; /* 174px */
+        height: 17.4375rem; /* 279px */
         justify-self: end;
-        /* clip-path: inset(0 15px 0 0); */
     }
-
+    
     .hero-child-cont .hero6 {
-        padding-right: 10px;
+        padding-right: 0.625rem; /* 10px */
         grid-row: 2;
         grid-column: 2;
-        margin-left: -33px;
-        margin-top: 33px;
-        width: 174px;
-        height: 279px;
+        margin-left: -2.0625rem; /* -33px */
+        margin-top: 2.0625rem; /* 33px */
+        width: 10.875rem; /* 174px */
+        height: 17.4375rem; /* 279px */
         justify-self: start;
     }
-
+    
     .getstarteddiv {
         flex-direction: column;
         width: 100%;
         height: auto;
-        margin-top: 24px;
-        gap: 24px;
+        margin-top: 1.5rem; /* 24px */
+        gap: 1.5rem; /* 24px */
     }
+    
 
     .checkoutvideo {
         justify-content: center;
     }
 
-    .brands{
-        height: 200px;
+    .brands {
+        height: 12.5rem; /* 200px */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 1.25rem; /* 20px */
     }
     
-    .brands p{
-        margin-top: 10px;
-        width: 322px;
-        height: 18px;
+    .brands p {
+        margin-top: 0.625rem; /* 10px */
+        width: 20.125rem; /* 322px */
+        height: 1.125rem; /* 18px */
         text-align: center;
         font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem; /* 16px */
+        line-height: 1.5rem; /* 24px */
     }
     
-    .brandimages{
+    .brandimages {
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
-        width: 400px;
-        max-width: 500px;
-        height: 32px;
+        gap: 1.5rem; /* 24px */
+        width: 25rem; /* 400px */
+        max-width: 31.25rem; /* 500px */
+        height: 2rem; /* 32px */
         justify-content: center;
         align-items: center;
     }
-
+    
     .google, .atlassian, .canon {
-        order: 1; /* First row */
+        order: 1; 
     }
     
     .walmart, .amazon {
-        order: 2; /* Second row */
+        order: 2;
     }
+    
 }

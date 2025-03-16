@@ -300,6 +300,74 @@ footer {
     /* background-color: red; */
 }
 
+/* Video Section */
+.video-section{
+    height: 944px;
+    background-color: #043A53;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 64px;
+    bottom: 0;
+}
+
+.videosection-text{
+    width: 1140px;
+    height: 144px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.videosection-text h1{
+    color: white;
+    width: 600px;
+    font-family: 'Lato';
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
+}
+
+.videosection-text p{
+    width: 430px;
+    height: 120px;
+    color: white;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.videosection-text h1 span{
+    color: #F0B73F;
+}
+
+.bgimg{
+    width: 1130px;
+    height: 636px;
+    display: block;
+}
+
+.video-container{
+    display: block;
+    position: relative;
+    align-self: flex-end;
+}
+
+.videoplaybtn{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
     .hero-cont {
         padding: 0.9375rem; /* 15px */
@@ -458,74 +526,79 @@ footer {
         width:  24px;
         height: 24px;
     }
-}
 
+    .video-section{
+        height: 440px;
+        background-color: #043A53;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 32px;
+        bottom: 0;
+    }
+    
+    .videosection-text{
+        width: 332px;
+        height: 172px;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+    
+    .videosection-text h1{
+        color: white;
+        width: 332px;
+        height: 76px;
+        font-family: 'Lato';
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 38px;
+        /* order: 1; */
+    }
 
-
-
-.video-section{
-    height: 944px;
-    background-color: #043A53;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 64px;
-    bottom: 0;
-}
-
-.videosection-text{
-    width: 1140px;
-    height: 144px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.videosection-text h1{
-    color: white;
-    width: 600px;
-    font-family: 'Lato';
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 72px;
-}
-
-.videosection-text p{
-    width: 430px;
-    height: 120px;
-    color: white;
-    font-family: 'Lato';
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.videosection-text h1 span{
-    color: #F0B73F;
-}
-
-.bgimg{
-    width: 1130px;
-    height: 636px;
-    display: block;
-}
-
-.video-container{
-    display: block;
-    position: relative;
-    align-self: flex-end;
-}
-
-.videoplaybtn{
-    background-color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+    .video-section h1 span{
+        order: 2;
+    }
+    
+    .videosection-text p{
+        width: 332px;
+        height: 80px;
+        color: white;
+        font-family: 'Lato';
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    .videosection-text h1 span{
+        color: #F0B73F;
+    }
+    
+    .bgimg{
+        width: 331px;
+        height: 186px;
+        display: block;
+    }
+    
+    .video-container{
+        display: block;
+        position: relative;
+        align-self: flex-end;
+    }
+    
+    .videoplaybtn{
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    
 }

@@ -556,10 +556,6 @@ footer {
         line-height: 38px;
         /* order: 1; */
     }
-
-    .video-section h1 span{
-        order: 2;
-    }
     
     .videosection-text p{
         width: 332px;
@@ -570,22 +566,12 @@ footer {
         font-weight: 400;
     }
     
-    .videosection-text h1 span{
-        color: #F0B73F;
-    }
-    
     .bgimg{
         width: 331px;
         height: 186px;
         display: block;
     }
-    
-    .video-container{
-        display: block;
-        position: relative;
-        align-self: flex-end;
-    }
-    
+
     .videoplaybtn{
         background-color: white;
         position: absolute;
@@ -599,6 +585,11 @@ footer {
         justify-content: center;
         align-items: center;
         cursor: pointer;
+    }
+
+    .polygon{
+        width: 10.75px;
+        height: 10.75px;
     }
     
 }

@@ -592,8 +592,8 @@ footer {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 120px;
-        height: 120px;
+        width: 35px;
+        height: 35px;
         border-radius: 100%;
         display: flex;
         justify-content: center;

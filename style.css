@@ -474,6 +474,92 @@ footer {
     padding-left: 2px;  
 }
 
+/* Bridge Section */
+.bridge-section{
+    display: flex;
+    height: 700px;
+    gap: 150px;
+    background-color: white;
+    position: relative;
+}
+
+.bridge-section .leftimage{
+    width: 629px;
+    height: 700px;
+}
+
+.bridge-section div .point{
+    width: 290px;
+    height: 290px;
+    position: absolute;
+    top: 390px;
+    left: 470px;
+    border-radius: 1000px;
+    border-width: 4px;
+
+}
+
+.text-area{
+    width: 511px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.text-area h1{
+    font-family: "Lato";
+    width: 550px;
+    height: 216px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -2%;
+}
+
+.text-area h1 span{
+    color: #92A7B0;
+}
+
+.text-area p{
+    font-family: "Lato";
+    width: 508px;
+    height: 90px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+}
+
+.text-area button{
+    width: 205px;
+    height: 64px;
+    border-radius: 55px;
+    background-color: #043A53;
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    color: white;
+    border: none;
+}
+
+.text-area button .right-arrow{
+    display: flex;
+    width: 32px;
+    height: 32px;
+    gap: 10px;
+    border-radius: 100px;
+    padding: 4px;
+    
+}
+
+
+
 @media screen and (max-width: 768px) {
     .hero-cont {
         padding: 0.9375rem; /* 15px */
@@ -787,8 +873,6 @@ footer {
         flex-direction: column;
         border-radius: 16px;
         background-color: #F2F5F6;
-        /* margin-right: 24px;
-        margin-bottom: 32px; */
     }
     
     .benefit-23 img{

@@ -901,5 +901,64 @@ footer {
         font-size: 14px;
         line-height: 20px;  
     }
+
+    .bridge-section{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: screen;
+        height: 770px;
+        gap: 32px;
+        background-color: white;
+    }
     
+    .bridge-section .leftimage{
+        width: 321px;
+        height: 368px;
+    }
+
+    .bridge-section div{
+        position: relative;
+    }
+    
+    .bridge-section div .point{
+        width: 209px;
+        height: 209px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 170px;
+        left: 194px;
+    }
+    
+    .text-area{
+        width: 372px;
+        height: 270px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .text-area h1{
+        font-family: "Lato";
+        width: 322px;
+        height: 114px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 38px;
+        text-align: center;
+    }
+    
+    .text-area p{
+        font-family: "Lato";
+        width: 332px;
+        height: 60px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
 }

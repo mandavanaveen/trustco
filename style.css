@@ -1004,4 +1004,41 @@ footer {
         line-height: 20px;
         text-align: center;
     }
+
+    /* Numbers Section */
+    .stats-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        height: 284px;
+        background-color: white;
+        padding-block: 32px;
+    }
+
+    .stat-box {
+        text-align: center;
+        width: 158px;
+        height: 76px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .stat-box h1 {
+        font-size: 36px;
+        line-height: 44px;
+        font-family: "Lato";
+        font-weight: 700;
+        letter-spacing: -2%;
+        text-align: center;
+        color: #043A53;
+    }
+
+    .stat-box p {
+        font-family: "Lato";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
 }

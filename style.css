@@ -476,6 +476,7 @@ footer {
 
 /* Bridge Section */
 .bridge-section{
+    order: 3;
     display: flex;
     height: 700px;
     gap: 150px;
@@ -565,6 +566,7 @@ footer {
 
 /* Numbers Section */
 .stats-container {
+    order: 1;
     display: flex;
     gap: 64px;
     height: 320px;
@@ -601,6 +603,117 @@ footer {
     text-align: center;
 }
 
+/* Founder Sectiom */
+.founder-section{
+    order: 2;
+    display: flex;
+    height: 774px;
+    gap: 64px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.founder-textarea{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 515px;
+    height: 574px;
+}
+
+.founder-textarea-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 527px;
+    height: 446px;
+}
+
+.founder-textarea-1 h1{
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    text-transform: capitalize;
+}
+
+.founder-textarea-1 blockquote{
+    width: 520px;
+    height: 256px;
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.founder-textarea-1 p{
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.founder-textarea-1 p span{
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.founder-textarea button{
+    width: 336px;
+    height: 64px;
+    border-radius: 55px;
+    background-color: #043A53;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+    border: none;
+}
+
+.founder-section-img{
+    top: -40px;
+    width: 626px;
+    height: 574px;
+    border-radius: 16px;
+    position: relative;
+    display: flex;
+}
+
+.rightimage{
+    width: 626px;
+    height: 574px;
+    border-radius: 16px;
+    z-index: 2;
+}
+
+.circleimg{
+    width: 250px;
+    height: 250px;
+    top: 360px;
+    position: absolute;
+    z-index: 3;
+}
+
+.founder-section-img div{
+    width: 104px;
+    height: 281px;
+    background-color: #043A53;
+    position: absolute;
+    top: 190px;
+    left: 403px;
+    border-radius: 1000px;
+    gap: 18px;
+    padding: 16px;
+    z-index: 1;
+}
 
 @media screen and (max-width: 768px) {
     .hero-cont {

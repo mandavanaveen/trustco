@@ -488,8 +488,9 @@ footer {
     height: 700px;
 }
 
-.bridge-section div{
+.bridge-section-1{
     position: relative;
+    margin-left: -181px;
 }
 
 .bridge-section div .point{

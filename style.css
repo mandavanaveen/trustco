@@ -474,9 +474,13 @@ footer {
     padding-left: 2px;  
 }
 
+.orderwise{
+    display: flex;
+    flex-direction: column;
+}
+
 /* Bridge Section */
 .bridge-section{
-    order: 3;
     display: flex;
     height: 700px;
     gap: 150px;
@@ -566,7 +570,6 @@ footer {
 
 /* Numbers Section */
 .stats-container {
-    order: 1;
     display: flex;
     gap: 64px;
     height: 320px;
@@ -605,7 +608,6 @@ footer {
 
 /* Founder Sectiom */
 .founder-section{
-    order: 2;
     display: flex;
     height: 774px;
     gap: 64px;
@@ -1120,6 +1122,7 @@ footer {
 
     /* Numbers Section */
     .stats-container {
+        order: 2;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
@@ -1154,4 +1157,105 @@ footer {
         line-height: 24px;
         text-align: center;
     }
+
+    /* Founder Section */
+    .founder-section{
+        order: 3;
+        display: flex;
+        flex-direction: column;
+        height: 961px;
+        gap: 32px;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+    
+    .founder-textarea{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 332px;
+        height: 424px;
+    }
+    
+    .founder-textarea-1{
+        width: 332px;
+        height: 328px;
+        text-align: center;
+    }
+    
+    .founder-textarea-1 h1{
+        font-family: "Lato";
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 38px;
+    }
+    
+    .founder-textarea-1 blockquote{
+        width: 332px;
+        height: 216px;
+        font-family: "Lato";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .founder-textarea-1 p{
+        font-family: "Lato";
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        height: 42px;
+    }
+    
+    .founder-textarea-1 p span{
+        font-family: "Lato";
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .founder-section-img{
+        top: 40px;
+        left: -40px;
+        width: 332px;
+        height: 378px;
+        border-radius: 16px;
+        position: relative;
+        display: flex;
+    }
+    
+    .rightimage{
+        width: 410px;
+        height: 378px;
+        border-radius: 16px;
+        z-index: 2;
+    }
+    
+    .circleimg{
+        width: 170px;
+        height: 170px;
+        top: 230px;
+        left: 20px;
+        position: absolute;
+        z-index: 3;
+    }
+    
+    .founder-section-img div{
+        width: 72px;
+        height: 213px;
+        position: absolute;
+        top: 110px;
+        left: 258px;
+        border-radius: 1000px;
+        gap: 8px;
+        padding: 8px;
+        z-index: 1;
+    }
+
+    .icon2{
+        width: 56px;
+        height: 56px;
+    }
+    
 }

@@ -479,13 +479,17 @@ footer {
     display: flex;
     height: 700px;
     gap: 150px;
+    justify-content: center;
     background-color: white;
-    position: relative;
 }
 
 .bridge-section .leftimage{
     width: 629px;
     height: 700px;
+}
+
+.bridge-section div{
+    position: relative;
 }
 
 .bridge-section div .point{

@@ -1415,4 +1415,133 @@ footer {
         height: 56px;
     }
     
+    /* Testimonial Section */
+    .testimonial-section {
+        height: 556px;
+        background-color: #F2F5F6;
+    }
+
+    .testimonial-container {
+        width: 372px;
+        height: 556px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-h1 {
+        margin-top: -80px;
+        width: 332px;
+        height: 76px;
+        font-family: "Lato";
+        font-weight: 700;
+        text-align: center;
+        font-size: 30px;
+        line-height: 38px;
+        color: #12141D;
+    }
+
+    .see-all {
+        position: absolute;
+        top: 478px;
+        left: 138.5px;
+        color: #12141D;
+        text-decoration: none;
+    }
+
+    .see-all-arrow{
+        width: 13px;
+        height: 13px;
+    }
+
+    .card {
+        width: 276.67px;
+        height: 244px;
+        border-radius: 16px;
+        background-color: white;
+        padding: 20px;
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        /* overflow: hidden; */
+    }
+
+    .quote {
+        width: 228.67px;
+        height: 96px;
+        font-family: "Lato";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #12141D;
+        position: relative;
+    }
+
+    .quote-before {
+        width: 47px;
+        height: 14px;
+        opacity: 0.9;
+        font-family: "Lato";
+        font-weight: 700;
+        font-size: 90px;
+        line-height: 70px;
+        color: #F0B73F;
+    }
+
+    .author {
+        width: 224px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+    }
+
+    .author img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .author-info {
+        width: 180px;
+        height: 38px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .author-info strong {
+        font-family: "Lato";
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        color: #12141D;
+    }
+
+    .author-info span {
+        font-family: "Lato";
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #404040;
+    }
+
+    .carousel {
+        position: relative;
+        /* width: 372px;  */
+        overflow: visible;
+        height: 244px;
+        margin: 0 auto;
+    }
+
+    .indicator {
+        width: 172px;
+        height: 12px;
+        display: flex;
+        position: absolute;
+        top: 80px;
+        gap: 10px;
+        margin: 64px auto;
+    }
 }

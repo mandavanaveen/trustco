@@ -198,6 +198,14 @@
             </div>
         </div>
         
+        <!-- blog Section -->
+        <div class="blog-section">
+            <div class="blog-container">
+                <h1 class="blog-h1">Whats new on <span>Trustco.</span> ?</h1>
+                <a href="#" class="blog-see-all">See All <img class="blog-see-all-arrow" src="./Assets/Vector.png"/></a>
+                <div class="blog-cards" id="blog-cards"></div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer Section -->
@@ -231,6 +239,32 @@
                     "author": "Jane Smith",
                     "title": "Operations Manager, Innovate Ltd",
                     "image": "./Assets/Photo4.png"
+                }
+            ]
+        };
+
+        const blogData = {
+            "entries": [
+                {
+                    "date": "23 Nov 2022",
+                    "author": "Amanda Hugh",
+                    "title": "What Makes an Authentic Employee Profile?",
+                    "excerpt": "I'm totally unconvinced that two people can find a person they haven't known previously...",
+                    "image": "./Assets/BlogPhoto1.png"
+                },
+                {
+                    "date": "15 Nov 2022",
+                    "author": "Sofia Kent",
+                    "title": "Why Does It Matter to be Authentic Employee?",
+                    "excerpt": "I'm totally unconvinced that two people can find a person they haven't known previously...",
+                    "image": "./Assets/BlogPhoto2.png"
+                },
+                {
+                    "date": "29 Sep 2022",
+                    "author": "Jason Bone",
+                    "title": "What Makes an Authentic Employee Profile?",
+                    "excerpt": "I'm totally unconvinced that two people can find a person they haven't known previously...",
+                    "image": "./Assets/BlogPhoto3.png"
                 }
             ]
         };
@@ -299,6 +333,36 @@
             updateCarousel();
         });
         
+        document.addEventListener('DOMContentLoaded', () => {
+            const blogCards = document.getElementById('blog-cards');
+            let currentIndex = 0;
+            let startX = 0;
+            let isDragging = false;
+
+            const entries = blogData.entries;
+
+            // Create blog cards
+            entries.forEach((item, index) => {
+                const card = document.createElement('div');
+                card.classList.add('blogcard-1');
+
+                card.innerHTML = `
+                    <img class="blog-image" src="${item.image}" alt="${item.title}">
+                    <div class="blog-card-content">
+                        <p class="blog-date">${item.date}, <span class="blog-author">by ${item.author}</span></p>
+                        <h3 class="blog-title">${item.title}</h3>
+                        <p class="blog-excerpt">${item.excerpt}</p>
+                        <a href="#" class="blog-read-story">Read Story <img class="blog-see-all-arrow" src="./Assets/Vector.png"/></a>
+                    </div>
+                `;
+
+                blogCards.appendChild(card);
+                console.log(`Card ${index + 1} created:`, card);
+            });
+
+
+        });
+
         function toggleMenu() {
             document.querySelector(".list-item").classList.toggle("active");
         }

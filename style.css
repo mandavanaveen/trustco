@@ -874,6 +874,139 @@ footer {
     background-color: #043A53;
 }
 
+/* Blog Section */
+.blog-section{
+    height: 923px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-container{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    position: relative;
+}
+
+.blog-h1{
+    width: 968px;
+    height: 72px;
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    color: #12141D;
+}
+
+.blog-h1 span{
+    color: #043A53;
+}
+
+.blog-see-all{
+    width: 95px;
+    height: 28px;
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 12px;
+    color: #12141D;
+    text-decoration: none;
+}
+
+.blog-see-all-arrow{
+    width: 13px;
+    height: 13px;
+}
+
+.blog-cards{
+    width: 1140px;
+    height: 537px;
+    display: flex;
+    gap: 32px;
+}
+
+.blogcard-1{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.blog-image{
+    width: 358.67px;
+    height: 257px;
+}
+
+.blog-card-content{
+    width: 358.67px;
+    height: 264px;
+    padding-inline: 24px;
+}
+
+.blog-date{
+    width: 308.67px;
+    height: 24px;
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+}
+
+.blog-author{
+    color: #404040;
+    width: 125px;
+    height: 24px;
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.blog-title{
+    color: black;
+    width: 308.67;
+    height: 64px;
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.blog-excerpt{
+    color: #404040;
+    width: 308.67px;
+    height: 84px;
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.blog-read-story{
+    color: #12141D;
+    width: 127px;
+    height: 28px;
+    gap: 16px;
+    border-radius: 55px;
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @media screen and (max-width: 768px) {
     .hero-cont {
         padding: 0.9375rem; /* 15px */

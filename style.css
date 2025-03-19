@@ -717,6 +717,163 @@ footer {
     z-index: 1;
 }
 
+/* Testimonial Section */
+.testimonial-section {
+    padding: 40px 20px;
+    display: flex;
+    background-color: #F2F5F6;
+}
+
+.testimonial-container {
+    margin: 0 auto;
+    position: relative;
+}
+
+.testimonial-h1 {
+    width: 968px;
+    height: 72px;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: start;
+    font-size: 60px;
+    line-height: 72px;
+    color: #12141D;
+    margin-bottom: 60px;
+}
+
+.see-all {
+    width: 95px;
+    height: 28px;
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 12px;
+    color: #12141D;
+    text-decoration: none;
+}
+
+.see-all-arrow{
+    width: 13px;
+    height: 13px;
+}
+
+.testimonial-cards {
+    height: 259px;
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px;
+    border-radius: 16px;
+}
+
+.card {
+    width: 554px;
+    height: 259px;
+    border-radius: 16px;
+    background-color: white;
+    padding: 20px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.quote {
+    width: 506px;
+    height: 96px;
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #12141D;
+    position: relative;
+}
+
+.quote-before {
+    width: 47px;
+    height: 14px;
+    opacity: 0.9;
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 70px;
+    color: #F0B73F;
+}
+
+.author {
+    width: 319px;
+    height: 53px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.author img {
+    width: 48px;
+    height: 48px;
+}
+
+.author-info {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.author-info strong {
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+}
+
+.author-info span {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #404040;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 1140px; 
+    height: 259px;
+    margin: 0 auto;
+}
+
+.indicator {
+    width: 172px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 64px auto;
+}
+
+.line {
+    width: 20px;
+    height: 12px;
+    background-color: #D7E0E5;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.line.active {
+    width: 80px;
+    height: 12px;
+    border-radius: 10px;
+    background-color: #043A53;
+}
+
 @media screen and (max-width: 768px) {
     .hero-cont {
         padding: 0.9375rem; /* 15px */

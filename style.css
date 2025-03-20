@@ -1148,15 +1148,15 @@ footer {
 .footer-section {
     background-color: white;
     height: 462px;
+    /* width: 100%; */
     display: flex;
-    justify-content: center;
-
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
+    justify-content: center;
     gap: 90px;
     margin-top: 80px;
 
@@ -1252,10 +1252,67 @@ footer {
     text-decoration: none;
 }
 
-.footer-nav  li a {
+.footer-nav li a {
     text-decoration: none;
     color: #404040;
 }
+
+/* Site Credits */
+.site-credit{
+    height: 72px;
+    overflow: hidden;
+    background-color: #F2F5F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-credit-container{
+    overflow: hidden;
+    height: 72px;
+    display: flex;
+    align-items:center;
+    gap: 326.5px;
+}
+
+.site-credit-p{
+    width: 155px;
+    height: 24px;
+    font-family: "Lato";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #92A7B0;
+    margin-bottom: 0;
+}
+
+.site-credit-service{
+    width: 234px;
+    height: 24px;
+    font-family: "Lato";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #92A7B0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-credit-service a{
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+
+.site-credit-language{
+    display: flex;
+    width: 100px;
+    height: 24px;
+    gap: 5px;
+    color: #92A7B0;
+
+}
+
 
 @media screen and (max-width: 768px) {
     .hero-cont {
@@ -2218,16 +2275,15 @@ footer {
 
     /* footer-section */
     .footer-section {
-        background-color: white;
         height: 736px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
     }
 
     .footer-container {
         display: flex;
         flex-direction: column;
-        /* justify-content: space-between; */
         gap: 24px;
         margin-top: 50px;
         width: 335px;
@@ -2278,8 +2334,6 @@ footer {
         display: flex;
         width: 335px;
         height: 188px;
-        /* justify-content: space-between; */
-        /* text-align: start; */
     }
 
     .footer-nav div{
@@ -2322,4 +2376,6 @@ footer {
         text-decoration: none;
         color: #404040;
     }
+
+    
 }

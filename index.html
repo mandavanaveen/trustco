@@ -335,9 +335,15 @@
         
         document.addEventListener('DOMContentLoaded', () => {
             const blogCards = document.getElementById('blog-cards');
+            const cards = [];
             let currentIndex = 0;
             let startX = 0;
+            let currentX = 0;
             let isDragging = false;
+            const cardWidth = 288.33;
+            const gap = 16;
+            const totalCardWidth = cardWidth + gap;
+            const containerWidth = 372;
 
             const entries = blogData.entries;
 
@@ -345,7 +351,6 @@
             entries.forEach((item, index) => {
                 const card = document.createElement('div');
                 card.classList.add('blogcard-1');
-
                 card.innerHTML = `
                     <img class="blog-image" src="${item.image}" alt="${item.title}">
                     <div class="blog-card-content">
@@ -355,12 +360,105 @@
                         <a href="#" class="blog-read-story">Read Story <img class="blog-see-all-arrow" src="./Assets/Vector.png"/></a>
                     </div>
                 `;
-
                 blogCards.appendChild(card);
-                console.log(`Card ${index + 1} created:`, card);
+
+                // Initial position
+                const initialX = index * totalCardWidth;
+                card.style.transform = `translateX(${initialX}px)`;
+
+                cards.push({
+                    element: card,
+                    baseX: initialX, // Base position without offset
+                    translateX: initialX
+                });
             });
 
+            // Update all card positions based on currentIndex
+            function updateblogCarousel() {
+                if (window.innerWidth <= 768) {
+                    const maxIndex = entries.length - 1;
+                    currentIndex = Math.max(0, Math.min(currentIndex, maxIndex));
+                    const offset = -currentIndex * totalCardWidth;
 
+                    cards.forEach((card, index) => {
+                        card.translateX = card.baseX + offset;
+                        card.element.style.transform = `translateX(${card.translateX}px)`;
+                    });
+                } else {
+                    cards.forEach(card => {
+                        card.element.style.transform = 'translateX(0)';
+                    });
+                }
+            }
+
+            // Handle drag start on individual card
+            function handleStart(event, card) {
+                if (window.innerWidth > 768) return;
+                isDragging = true;
+                card.element.classList.add('dragging');
+                startX = event.type.includes('mouse') ? event.pageX : event.touches[0].pageX;
+                currentX = startX;
+                event.preventDefault();
+            }
+
+            // Handle drag move
+            function handleMove(event) {
+                if (!isDragging || window.innerWidth > 768) return;
+                event.preventDefault();
+                currentX = event.type.includes('mouse') ? event.pageX : event.touches[0].pageX;
+                const deltaX = currentX - startX;
+
+                // Update all cards' positions based on drag
+                const offset = -currentIndex * totalCardWidth + deltaX;
+                cards.forEach((card, index) => {
+                    card.translateX = card.baseX + offset;
+                    card.element.style.transform = `translateX(${card.translateX}px)`;
+                });
+            }
+
+            // Handle drag end
+            function handleEnd() {
+                if (!isDragging || window.innerWidth > 768) return;
+                isDragging = false;
+                cards.forEach(card => card.element.classList.remove('dragging'));
+
+                const deltaX = currentX - startX;
+                const threshold = 50; // Pixels to swipe before changing card
+                if (Math.abs(deltaX) > threshold) {
+                    if (deltaX < 0 && currentIndex < entries.length - 1) {
+                        currentIndex++; // Swipe left
+                    } else if (deltaX > 0 && currentIndex > 0) {
+                        currentIndex--; // Swipe right
+                    }
+                }
+                updateblogCarousel();
+            }
+
+            // Add event listeners to each card
+            cards.forEach(card => {
+                card.element.addEventListener('touchstart', (e) => handleStart(e, card));
+                card.element.addEventListener('touchmove', handleMove);
+                card.element.addEventListener('touchend', handleEnd);
+                card.element.addEventListener('mousedown', (e) => handleStart(e, card));
+                card.element.addEventListener('mousemove', handleMove);
+                card.element.addEventListener('mouseup', handleEnd);
+                card.element.addEventListener('mouseleave', handleEnd);
+            });
+
+            // Debounce resize
+            function debounce(func, wait) {
+                let timeout;
+                return function(...args) {
+                    clearTimeout(timeout);
+                    timeout = setTimeout(() => func(...args), wait);
+                };
+            }
+
+            const debouncedUpdate = debounce(updateblogCarousel, 100);
+            window.addEventListener('resize', debouncedUpdate);
+
+            // Initial setup
+            updateblogCarousel();
         });
 
         function toggleMenu() {

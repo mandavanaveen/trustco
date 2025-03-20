@@ -2774,4 +2774,191 @@ footer {
         gap: 5px;
         color: #92A7B0;
     }
+
+    .page-content {
+        margin-top: 30px;
+        background-color: white;
+    }
+
+    /* Contact Section */
+    .contact-section {
+        background-color: white;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .contact-header {
+        width: 335px;
+        height: 111px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .contact-header h1 {
+        width: 335px;
+        height: 38px;
+        gap: 16px;
+        font-family: "Lato";
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 100%;
+        text-align: center;
+        letter-spacing: -1.5px;
+    }
+
+    .contact-header p {
+        width: 335px;
+        height: 57px;
+        opacity: 0.7;
+        font-family: "Lato";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        text-align: center;
+    }
+
+    .contact-options {
+        width: 335px;
+        height: 988px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-card {
+        width: 335px;
+        height: 316px;
+        border-radius: 16px;
+        padding: 12px;
+        gap: 32px;
+        box-shadow: none;
+    }
+
+    .contact-card-text {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-email {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-card p {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Form Section */
+    .form-section {
+        background-color: white;
+        width: 375px;
+        height: 805px;
+        padding: 20px;
+    }
+
+    .form-container {
+        width: 335px;
+        height: 725px;
+    }
+
+    .form-header {
+        width: 335px;
+        height: 111px;
+        gap: 16px;
+    }
+
+    .form-header h1 {
+        width: 335px;
+        height: 38px;
+        font-family: "Lato";
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 100%;
+        text-align: center;
+        letter-spacing: -1px;
+    }
+
+    .form-header p {
+        width: 335px;
+        height: 57px;
+        opacity: 0.7;
+        font-family: "Lato";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .contact-form {
+        height: 725px;
+        width: 335px;
+        gap: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 8px;
+        font-size: 12px;
+        background-size: 18px;
+    }
+
+    .contact-form input[type="text"][placeholder="Name"],
+    .contact-form input[type="email"],
+    .contact-form input[type="text"][placeholder="Company Name"],
+    .contact-form input[type="tel"] {
+        width: 335px;
+        height: 44px;
+        border-radius: 10px;
+        gap: 10px;
+        padding-top: 8px;
+        background-size: 20px;
+        font-family: "Lato";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        padding-left: 35px;
+
+    }
+
+    .contact-form textarea {
+        width: 335px;
+        height: 150px;
+        border-radius: 10px;
+        /* padding: 12px; */
+        /* gap: 15px; */
+        border-width: 1px;
+    }
+
+    .form-footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-footer label {
+        width: 100%;
+        height: auto;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .form-footer button {
+        width: 335px;
+        height: 50px;
+        border-radius: 42px;
+        gap: 10px;
+        font-family: "Lato";
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
 }

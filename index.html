@@ -611,6 +611,11 @@
             document.querySelector('.list-item').classList.toggle('active');
         }
 
+        const menuIcon = document.querySelector('.menu-icon');
+        if (menuIcon) {
+            menuIcon.addEventListener('click', toggleMenu);
+        }
+
         function debounce(func, wait) {
             let timeout;
             return function (...args) {

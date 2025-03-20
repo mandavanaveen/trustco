@@ -1144,6 +1144,119 @@ footer {
     background-color: #F0B73F;
 }
 
+/* footer-section */
+.footer-section {
+    background-color: white;
+    height: 462px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 90px;
+    margin-top: 80px;
+
+}
+
+.footer-logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 247px;
+    height: 230px;
+    gap: 50px;
+}
+
+.footer-logo {
+    width: 211.54px;
+    height: 32px;
+    text-align: start;
+}
+
+.footer-social-icons {
+    width: 247px;
+    height: 40px;
+    display: flex;
+    gap: 16px;
+}
+
+.footer-social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+}
+
+.footer-tagline {
+    width: 395px;
+    height: 230px;
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #404040;
+    text-align: start;
+}
+
+.footer-nav {
+    display: flex;
+    width: 318px;
+    height: 230px;
+    justify-content: space-between;
+    text-align: start;
+}
+
+.footer-nav div{
+    width: 114px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #404040;
+
+}
+
+.footer-nav h1{
+    width: 114px;
+    height: 32px;
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #12141D;
+    margin-bottom: 32px;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    width: 114px;
+    height: 166px;
+    gap: 20px;
+    align-items: start;
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.nav-links li {
+    display: flex;
+    text-decoration: none;
+}
+
+.footer-nav  li a {
+    text-decoration: none;
+    color: #404040;
+}
+
 @media screen and (max-width: 768px) {
     .hero-cont {
         padding: 0.9375rem; /* 15px */

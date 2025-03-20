@@ -1010,6 +1010,139 @@ footer {
     align-items: center;
 }
 
+/* Banner section */
+.banner-section{
+    overflow-y: hidden;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    background-color: #12141D;
+    /* align-items: center; */
+}
+
+.banner-header-img {
+    height: 520px;
+    display: flex;
+    align-items: center;
+}
+
+.header-container{
+    width: 673px;
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding-left: 150px;
+}
+
+.header-container h1{
+    color: white;
+    width: 673px;
+    height: 144px;
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    text-transform: capitalize;
+    letter-spacing: -1.5px;
+
+}
+
+.button-cont{
+    width: 448px;
+    height: 118px;
+    gap: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+}
+
+.button-cont button{
+    background-color: #F0B73F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 24px;
+    padding-right: 13px;
+    width: 273px;
+    height: 64px;
+    border-radius: 55px;
+    color: white;
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    gap: 20px;
+    border: none;
+}
+
+.yellow-arrow{
+    width: 32px;
+    height: 32px;
+}
+
+.button-cont p{
+    width: 448px;
+    height: 30px;
+    opacity: 0.7;
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+}
+
+.banner-image{
+    position: relative;
+
+}
+
+.banner-crown{
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    z-index: 1;
+    top: 402px;
+    left: -32px;
+
+}
+
+.banner-girl{
+    position: relative;
+    width: 723px;
+    height: 520px;
+    z-index: 2;
+    margin-bottom: -7px;
+    left: -40px;
+}
+
+.banner-star{
+    position: absolute;
+    z-index: 3;
+    width: 104px;
+    height: 413px;
+    top: 358.36px;
+    left: 420px;
+    border-radius: 100px;
+    padding: 16px;
+    background-color: #043A53;
+}
+
+.banner-search{
+    position: absolute;
+    z-index: 0;
+    width: 104px;
+    height: 502px;
+    top: 201.13px;
+    left: 589px;
+    gap: 18px;
+    border-radius: 1000px;
+    padding: 16px;
+    background-color: #F0B73F;
+}
+
 @media screen and (max-width: 768px) {
     .hero-cont {
         padding: 0.9375rem; /* 15px */

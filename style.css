@@ -1188,7 +1188,7 @@ footer {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #e0e0e0;
+    background-color: #D7E0E5;
 }
 
 .footer-tagline {
@@ -2214,5 +2214,112 @@ footer {
     .banner-search img {
         width: 56px;
         height: 56px;
+    }
+
+    /* footer-section */
+    .footer-section {
+        background-color: white;
+        height: 736px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        gap: 24px;
+        margin-top: 50px;
+        width: 335px;
+        height: 452px;
+    }
+
+    .footer-logo-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 335px;
+        height: 96px;
+        gap: 24px;
+    }
+
+    .footer-logo {
+        width: 211.54px;
+        height: 32px;
+    }
+
+    .footer-social-icons {
+        width: 335px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .footer-social-icons img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #D7E0E5;
+    }
+
+    .footer-tagline {
+        width: 335px;
+        height: 120px;
+        font-family: "Lato";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #12141D;
+        text-align: center;
+    }
+
+    .footer-nav {
+        display: flex;
+        width: 335px;
+        height: 188px;
+        /* justify-content: space-between; */
+        /* text-align: start; */
+    }
+
+    .footer-nav div{
+        width: 167.5px;
+        height: 188px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-nav h1{
+        width: 167.5px;
+        height: 28px;
+        font-family: "Lato";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        color: #12141D;
+        margin-bottom: 16px;
+    }
+
+    .nav-links{
+        width: 167.5px;
+        height: 166px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+        font-family: "Lato";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .nav-links li {
+        /* display: flex; */
+        text-decoration: none;
+    }
+
+    .footer-nav  li a {
+        text-decoration: none;
+        color: #404040;
     }
 }
